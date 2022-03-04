@@ -174,7 +174,8 @@ tips.forEach( el => {
             deselect(el);
         });
     }
-    else{
+    else
+    {
         el.addEventListener('click', (e) => {calc.setTipValue(parseFloat(el.value))
             updateValues();
             el.classList.add('active');
