@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <main class="main-container">
+
+    <h1>SPLI<br>TTER</h1>
+
+    <section class="calc-container box-shadow">
+      <article class="controls">
+        <div class="controls__item">
+          <small class="label-input">Bill</small>
+            <div class="input-group">
+              <i class="input-group__icon input-group__icon--dollar"></i>
+              <input class="input-group__input" id="bill" type="number" name="bill" placeholder="0" >
+            </div>
+            <span class="span-error error_input"></span>
+        </div>
+
+        <div class="controls__item">
+          
+          <small class="label-input">Select Tip %</small>
+          
+          <ul class="select-group" >
+            <li class="select-group__item">
+              <button class="select-button select-button--green" value="0.05">5%</button>
+            </li>
+            <li class="select-group__item">
+              <button class="select-button select-button--green" value="0.10">10%</button>
+            </li>
+            <li class="select-group__item">
+              <button class="select-button select-button--green" value="0.15">15%</button>
+            </li>
+            <li class="select-group__item">
+              <button class="select-button select-button--green" value="0.25">25%</button>
+            </li>
+            <li class="select-group__item">
+              <button class="select-button select-button--green" value="0.50">50%</button>
+            </li>
+            <li class="select-group__item">
+              <input class="input-group__input--custom select-button placeholder_custom" value="" type="number" name="number" placeholder="Custom">
+              <span class="span-error error_custom"></span>
+            </li>
+          </ul>
+
+        </div>
+        
+        <div class="controls__item">
+          <small class="label-input" >Number of People</small>
+            <div class="input-group">
+              <i class="input-group__icon input-group__icon--person"></i>
+              <input class="input-group__input" id="number-of-people" type="number" name="number-of-people" placeholder="0">
+            </div>
+            <span class="span-error error_input"></span>
+        </div>
+      </article>
+      <article class="results">
+        <div class="results__tip-amount">
+          <div class="subtitle">
+            <small>Tip Amount</small>
+            <span>/ person</span>
+          </div>
+          <h3 id="amount">$0.00</h3>
+        </div>
+        
+        <div class="results__total">
+          <div class="subtitle">
+            <small>Total</small>
+            <span>/ person</span>
+          </div>
+          <h3 id="totalValue">$0.00</h3>
+        </div>
+      
+        <button class="button--reset active">Reset</button>
+      </article>
+    </section>    
+
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/JuaniCaste23">JuaniCaste23</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
