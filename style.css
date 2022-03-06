@@ -68,7 +68,7 @@ input {
     outline: none;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar { /* Saca la barra de scroll del Index*/
     display: none;
 }
 
@@ -246,9 +246,11 @@ input {
 }
 
 .attribution { 
-    display: none;
-    font-size: 11px; 
+    .attribution { 
+    font-size: 1.4rem; 
     text-align: center; 
+    font-weight: bold;
+    margin-bottom: 9px;
 }
 
 .attribution a { 
